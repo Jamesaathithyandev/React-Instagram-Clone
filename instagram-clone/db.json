@@ -1,0 +1,114 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "user": {
+        "id": 101,
+        "username": "john_doe",
+        "profile_pic": "src/assets/profile/profile1.jpg"
+      },
+      "image": "src/assets/posts/sunset.jpg",
+      "caption": "Beautiful sunset 🌅 #Nature #Sunset",
+      "likes": 120,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Wow! Amazing shot! 📸"
+        },
+        {
+          "user": "mark_92",
+          "comment": "Where is this place?"
+        }
+      ],
+      "timestamp": "2025-02-11T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 102,
+        "username": "alice_wonder",
+        "profile_pic": "src/assets/profile/profile2.jpg"
+      },
+      "image": "src/assets/posts/coffee.jpg",
+      "caption": "Starting my day with good coffee ☕✨ #Coffee #Morning",
+      "likes": 89,
+      "comments": [
+        {
+          "user": "john_doe",
+          "comment": "That coffee looks perfect!"
+        },
+        {
+          "user": "sarah_lee",
+          "comment": "Coffee is always a good idea ☕"
+        }
+      ],
+      "timestamp": "2025-02-12T08:15:00Z"
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 103,
+        "username": "travel_with_mike",
+        "profile_pic": "src/assets/profile/profile3.jpg"
+      },
+      "image": "src/assets/posts/mountain.jpg",
+      "caption": "Lost in the mountains 🏔️ #Travel #Adventure",
+      "likes": 245,
+      "comments": [
+        {
+          "user": "alex_travels",
+          "comment": "This view is incredible!"
+        },
+        {
+          "user": "john_doe",
+          "comment": "Adding this place to my bucket list 🔥"
+        }
+      ],
+      "timestamp": "2025-02-13T16:45:00Z"
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 104,
+        "username": "sarah_lee",
+        "profile_pic": "src/assets/profile/profile4.jpg"
+      },
+      "image": "src/assets/posts/city night.jpg",
+      "caption": "City lights and late nights 🌃✨",
+      "likes": 176,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Such a beautiful city!"
+        },
+        {
+          "user": "mike_travels",
+          "comment": "Love this vibe 🔥"
+        }
+      ],
+      "timestamp": "2025-02-14T20:30:00Z"
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": 105,
+        "username": "alex_travels",
+        "profile_pic": "src/assets/profile/profile5.jpg"
+      },
+      "image": "src/assets/posts/forest.jpg",
+      "caption": "A peaceful walk through the forest 🌲🍃",
+      "likes": 134,
+      "comments": [
+        {
+          "user": "sarah_lee",
+          "comment": "Nature is beautiful ❤️"
+        },
+        {
+          "user": "john_doe",
+          "comment": "I could spend all day here."
+        }
+      ],
+      "timestamp": "2025-02-15T11:20:00Z"
+    }
+  ]
+}
