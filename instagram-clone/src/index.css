@@ -1,0 +1,18 @@
+.main{
+  display:flex;
+}
+
+.side{
+  width:20%;
+}
+
+.post{
+  width:55%;
+  background-color: ivory;
+
+}
+
+.side-logo{
+  width:22px;
+  height:22px;
+}
