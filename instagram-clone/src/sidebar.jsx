@@ -11,10 +11,26 @@ import menuIcon from './assets/Menu.png'
 import moreMetaIcon from './assets/More From Meta.png'
 
 function Sidebar() {
+  const handleLogoClick = () => {
+    window.location.href = '/'
+  }
+
   return (
     <div className="main-side">
       <div className="top-side">
-        <div className="itemtop">
+        <div
+          className="logo-button"
+          onClick={handleLogoClick}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault()
+              handleLogoClick()
+            }
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label="Go to home page"
+        >
           <img
             className="side-logo"
             src={logo}

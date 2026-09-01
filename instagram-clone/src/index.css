@@ -285,40 +285,72 @@ html, body, #root {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  padding: 10px 18px 18px 18px;
+  padding: 12px 18px 14px 18px;
   box-sizing: border-box;
   background: #fff;
   position: sticky;
   top: 0;
+  overflow: hidden;
 }
 
 .top-side,
 .bottom-side {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.logo-button {
+  
+  width: 100%;
+  max-width: 220px;
+  margin: 8px 0 20px 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-button:hover {
+  background: transparent;
+}
+
+.logo-button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
 }
 
 .side-logo {
-  width: 34px;
-  height: 34px;
-  margin: 10px 0 30px 0;
+  width: 26px;
+  height: 26px;
+  display: block;
 }
 
 .itemtop,
 .items {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin: 12px 0;
-  font-size: 21px;
+  gap: 14px;
+  margin: 6px 0;
+  font-size: 16px;
   line-height: 1.2;
   color: #000;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.itemtop:hover,
+.items:hover {
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .itemtop img,
 .items img {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -327,12 +359,15 @@ html, body, #root {
 .items span {
   font-weight: 400;
   color: #000;
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
 }
 
 .bottom-side {
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .bottom-side .items {
-  margin: 18px 0;
+  margin: 8px 0;
 }
