@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 import likeIcon from './assets/Post-icons/Like.png'
 import commentIcon from './assets/Post-icons/Comment.png'
@@ -19,10 +20,9 @@ function Post() {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/posts')
-      .then((response) => response.json())
-      .then((data) => {
-        const cleanedPosts = Array.isArray(data) ? data : data.posts || []
+    axios.get(`${API_BASE_URL}/posts`)
+      .then((response) => {
+        const cleanedPosts = Array.isArray(response.data) ? response.data : response.data.posts || []
         setPosts(cleanedPosts)
       })
       .catch((error) => console.error('Error fetching posts:', error))

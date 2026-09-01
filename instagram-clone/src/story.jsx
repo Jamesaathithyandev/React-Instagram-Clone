@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const API_BASE_URL = 'http://localhost:5000'
 
@@ -14,10 +15,10 @@ function Story() {
   const [stories, setStories] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5000/posts')
-      .then((response) => response.json())
-      .then((data) => {
-        const users = (Array.isArray(data) ? data : data.posts || []).map((post) => ({
+    axios.get(`${API_BASE_URL}/posts`)
+      .then((response) => {
+        const posts = Array.isArray(response.data) ? response.data : response.data.posts || []
+        const users = posts.map((post) => ({
           id: post.user?.id || post.id,
           name: post.user?.username,
           image: post.user?.profile_pic,

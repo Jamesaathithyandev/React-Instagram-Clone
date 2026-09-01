@@ -112,5 +112,79 @@
       "timestamp": "2025-02-15T11:20:00Z"
     }
   ],
+  "followers": [
+    {
+      "id": "mNQBJambX3o",
+      "name": "Dark chocolate",
+      "username": "dark_chocolate",
+      "subtitle": "Follows you",
+      "image": "/profile/profile1.jpg"
+    },
+    {
+      "id": "s-rWyDAIaDc",
+      "name": "Kaviya Rao",
+      "username": "kaviya_rao",
+      "subtitle": "Follows you",
+      "image": "/profile/profile2.jpg"
+    },
+    {
+      "id": "EhKQuraFgJE",
+      "name": "Kashvi Jain",
+      "username": "kashvi_jain",
+      "subtitle": "Follows you",
+      "image": "/profile/profile3.jpg"
+    },
+    {
+      "id": "utASK-3FDxY",
+      "name": "Rithika",
+      "username": "rithika_07",
+      "subtitle": "Follows you",
+      "image": "/profile/profile4.jpg"
+    },
+    {
+      "id": "9ykYbeamUPs",
+      "name": "NAndhu..",
+      "username": "nandhu_star",
+      "subtitle": "Follows you",
+      "image": "/profile/profile5.jpg"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "1",
+      "name": "Dark chocolate",
+      "username": "dark_chocolate",
+      "subtitle": "Suggested for you",
+      "image": "/profile/profile1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Kaviya Rao",
+      "username": "kaviya_rao",
+      "subtitle": "Suggested for you",
+      "image": "/profile/profile2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Kashvi Jain",
+      "username": "kashvi_jain",
+      "subtitle": "Suggested for you",
+      "image": "/profile/profile3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Rithika",
+      "username": "rithika_07",
+      "subtitle": "Suggested for you",
+      "image": "/profile/profile4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "NAndhu..",
+      "username": "nandhu_star",
+      "subtitle": "Suggested for you",
+      "image": "/profile/profile5.jpg"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
