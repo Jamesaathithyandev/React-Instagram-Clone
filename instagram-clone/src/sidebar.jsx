@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import logo from './assets/black instagram logo.png'
 import homeIcon from './assets/Home.png'
 import reelsIcon from './assets/Reels.png'
@@ -11,25 +12,23 @@ import menuIcon from './assets/Menu.png'
 import moreMetaIcon from './assets/More From Meta.png'
 
 function Sidebar() {
-  const handleLogoClick = () => {
-    window.location.href = '/'
-  }
+  const navigate = useNavigate()
 
   return (
     <div className="main-side">
       <div className="top-side">
         <div
           className="logo-button"
-          onClick={handleLogoClick}
+          role="button"
+          tabIndex={0}
+          aria-label="Instagram home"
+          onClick={() => navigate('/')}
           onKeyDown={(event) => {
             if (event.key === 'Enter' || event.key === ' ') {
               event.preventDefault()
-              handleLogoClick()
+              navigate('/')
             }
           }}
-          role="button"
-          tabIndex={0}
-          aria-label="Go to home page"
         >
           <img
             className="side-logo"
@@ -68,7 +67,19 @@ function Sidebar() {
           <span>Create</span>
         </div>
 
-        <div className="itemtop">
+        <div
+          className="itemtop"
+          onClick={() => navigate('/profile')}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault()
+              navigate('/profile')
+            }
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label="Go to profile page"
+        >
           <img src={profileIcon} alt="Profile" style={{ width: '24px', height: '24px' }} />
           <span>Profile</span>
         </div>

@@ -5,12 +5,21 @@ import commentIcon from './assets/Post-icons/Comment.png'
 import shareIcon from './assets/Post-icons/Share.png'
 import bookmarkIcon from './assets/Post-icons/Bookmark.png'
 
+const API_BASE_URL = 'http://localhost:5000'
+
+const toImageUrl = (path) => {
+  if (!path) return ''
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+    return path
+  }
+  return `${API_BASE_URL}${path}`
+}
 
 function Post() {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:5001/posts')
+    fetch('http://localhost:5000/posts')
       .then((response) => response.json())
       .then((data) => {
         const cleanedPosts = Array.isArray(data) ? data : data.posts || []
@@ -27,7 +36,7 @@ function Post() {
             <div className="post-header">
               <div className="post-user">
                 <img
-                  src={post.user?.profile_pic}
+                  src={toImageUrl(post.user?.profile_pic)}
                   alt={post.user?.username}
                   className="post-avatar"
                 />
@@ -37,7 +46,7 @@ function Post() {
               <span className="post-time">{post.timestamp}</span>
             </div>
 
-            <img src={post.image} alt={post.caption} className="post-image" />
+            <img src={toImageUrl(post.image)} alt={post.caption} className="post-image" />
 
             <div className="post-actions">
               <img src={likeIcon} alt="Like" className="action-icon" />

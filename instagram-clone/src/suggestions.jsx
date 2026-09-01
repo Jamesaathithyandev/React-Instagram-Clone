@@ -1,5 +1,15 @@
 import React from 'react'
 
+const API_BASE_URL = 'http://localhost:5000'
+
+const toImageUrl = (path) => {
+  if (!path) return ''
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+    return path
+  }
+  return `${API_BASE_URL}${path}`
+}
+
 const suggestions = [
   {
     id: 1,
@@ -44,7 +54,7 @@ function Suggestions() {
       {suggestions.map((user) => (
         <div key={user.id} className="suggestion-item">
           <div className="suggestion-user">
-            <img src={user.image} alt={user.name} className="suggestion-avatar" />
+            <img src={toImageUrl(user.image)} alt={user.name} className="suggestion-avatar" />
             <div className="suggestion-text">
               <div className="suggestion-name">{user.name}</div>
               <div className="suggestion-subtitle">{user.subtitle}</div>
