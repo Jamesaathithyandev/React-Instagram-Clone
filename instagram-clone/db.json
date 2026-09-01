@@ -5,9 +5,9 @@
       "user": {
         "id": 101,
         "username": "john_doe",
-        "profile_pic": "src/assets/profile/profile1.jpg"
+        "profile_pic": "/profile/profile1.jpg"
       },
-      "image": "src/assets/posts/sunset.jpg",
+      "image": "/posts/sunset.jpg",
       "caption": "Beautiful sunset 🌅 #Nature #Sunset",
       "likes": 120,
       "comments": [
@@ -27,9 +27,9 @@
       "user": {
         "id": 102,
         "username": "alice_wonder",
-        "profile_pic": "src/assets/profile/profile2.jpg"
+        "profile_pic": "/profile/profile2.jpg"
       },
-      "image": "src/assets/posts/coffee.jpg",
+      "image": "/posts/coffee.jpg",
       "caption": "Starting my day with good coffee ☕✨ #Coffee #Morning",
       "likes": 89,
       "comments": [
@@ -49,9 +49,9 @@
       "user": {
         "id": 103,
         "username": "travel_with_mike",
-        "profile_pic": "src/assets/profile/profile3.jpg"
+        "profile_pic": "/profile/profile3.jpg"
       },
-      "image": "src/assets/posts/mountain.jpg",
+      "image": "/posts/mountain.jpg",
       "caption": "Lost in the mountains 🏔️ #Travel #Adventure",
       "likes": 245,
       "comments": [
@@ -71,9 +71,9 @@
       "user": {
         "id": 104,
         "username": "sarah_lee",
-        "profile_pic": "src/assets/profile/profile4.jpg"
+        "profile_pic": "/profile/profile4.jpg"
       },
-      "image": "src/assets/posts/city night.jpg",
+      "image": "/posts/city night.jpg",
       "caption": "City lights and late nights 🌃✨",
       "likes": 176,
       "comments": [
@@ -93,9 +93,9 @@
       "user": {
         "id": 105,
         "username": "alex_travels",
-        "profile_pic": "src/assets/profile/profile5.jpg"
+        "profile_pic": "/profile/profile5.jpg"
       },
-      "image": "src/assets/posts/forest.jpg",
+      "image": "/posts/forest.jpg",
       "caption": "A peaceful walk through the forest 🌲🍃",
       "likes": 134,
       "comments": [

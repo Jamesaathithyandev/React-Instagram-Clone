@@ -6,18 +6,26 @@ function Story() {
   useEffect(() => {
     fetch('http://localhost:5000/posts')
       .then((response) => response.json())
-      .then((data) => setStories(data))
-      .catch((error) => console.error('Story fetch error:', error))
+      .then((data) => {
+        const users = (Array.isArray(data) ? data : data.posts || []).map((post) => ({
+          id: post.user?.id || post.id,
+          name: post.user?.username,
+          image: post.user?.profile_pic,
+        }))
+
+        setStories(users)
+      })
+      .catch((error) => console.error('Error fetching stories:', error))
   }, [])
 
   return (
-    <div className="story-section">
+    <div className="story">
       {stories.map((story) => (
         <div key={story.id} className="story-item">
           <div className="story-ring">
-            <img src={story.user.profile_pic} alt={story.user.username} className="story-image" />
+            <img src={story.image} alt={story.name} className="story-avatar" />
           </div>
-          <span>{story.user.username}</span>
+          <span className="story-name">{story.name}</span>
         </div>
       ))}
     </div>
