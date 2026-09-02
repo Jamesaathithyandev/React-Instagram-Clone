@@ -1,0 +1,158 @@
+body {
+    background-color: #e2e2e262;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: inset 0 -1px 0 #a6a6a6;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 130px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.navbar-brand:hover {
+    color: #ff0000;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.navbar-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    color: #ff0000;
+}   
+
+.navbar-auth-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+
+.home-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: center;
+}
+
+.home-subheading {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #00000074;
+    text-align: center;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.home-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000000;
+    text-align: left;
+    width: 100%;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 430px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  margin: 0 0 0.75rem;
+  min-height: 72px;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.product-price {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  text-align: left;
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.btns {
+    display: flex;
+    gap: 0.75rem;
+}
+
+
+.product-actions .btn {
+  flex: 1;
+  text-align: center;
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+}
